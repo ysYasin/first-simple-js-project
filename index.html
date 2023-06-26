@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon linking  -->
+    <link rel="shortcut icon" href="images/logo/k.png" type="image/x-icon">
+    <!-- custom css linking  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- tailwind css cdn linking  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="Custom-headSection">
+        <img class="custome-bg-image bg-cover" width="100%" src="images/bg-image/2.jpg" alt="background image"
+            srcset="">
+        <nav>
+            <a href="#">
+                <img class="absolute top-px ms-10" id="logiImg" width="15%" src="images/logo/logo.png" alt="">
+            </a>
+        </nav>
+        <section id="bapofSections" class="absolute container mx-auto top-28 font-serif grid grid-cols-2 gap-4">
+            <section id="hidenInMobile" class="ms-14 text-white">
+                <h1 class="text-4xl font-semibold capitalize">Login</h1>
+                <h2 class="text-lg font-semibold capitalize">sign to contineu</h2>
+                <div class="mt-12 relative">
+                    <p class="text-xs py-3 my-12 capitalize customp-style">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing
+                        elit.
+                        Voluptates
+                        asperiores
+                        et aliquam vel
+                        officia laborum, exercitationem numquam rerum dolorem officiis.</p>
+                </div>
+                <button class="rounded-full capitalize py-1 mt-2 px-5 bg-red-500 hover:bg-red-600">learn more</button>
+            </section>
+            <section id="moblibleViw" class="flex justify-center rounded-full items-center">
+                <div class="text-white custom-Sin-Box-c p-6 w-80 rounded-3xl">
+                    <h1 class="text-lg text-center font-semibold capitalize mb-9">Sign in</h1>
+                    <div class="flex flex-col gap-2">
+                        <!-- email feild  -->
+                        <label for="email" class="uppercase text-sm ps-2">Email</label>
+                        <input type="text" class="outline-none rounded-full py-1 px-4" name="emain"
+                            placeholder="You'r Email name@" id="email">
+                        <!-- password field  -->
+                        <label for="pasword" class="uppercase text-sm ps-2">passpord</label>
+                        <input type="password" class=" rounded-full py-1 px-4" name="pasword"
+                            placeholder="Your Password" id="pasword">
+                        <div class="flex justify-center">
+                            <button id="Login-buton"
+                                class="rounded-full capitalize py-1 mt-2 px-5 w-32 bg-red-500 hover:bg-red-600">Login</button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- js linking  -->
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>

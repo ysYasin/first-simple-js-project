@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon linking  -->
+    <link rel="shortcut icon" href="images/logo/k.png" type="image/x-icon">
+    <!-- custom css linking  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- tailwind css cdn linking  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="my-12">
+        <h1 class="text-3xl font-bold font-sans text-center">Wellcome to <span class="text-teal-500	">Esy</span><span
+                class="text-rose-500">Pay</span> Online Banking</h1>
+    </header>
+    <main>
+        <!-- balence && widthdrow and deposit section  -->
+        <section class="grid grid-cols-3 gap-4 w-9/12 mx-auto capitalize text-white">
+            <!-- deposite box  -->
+            <div class=" rounded bg-green-400 px-5 py-3">
+                <h1 class="text-3xl">deposite</h1>
+                <h2 class="text-4xl" id="">$<span id="depo-change">00</span></h2>
+            </div>
+            <div class="rounded bg-orange-500 px-5 py-3">
+                <h1 class="text-3xl">withdrow</h1>
+                <h2 class="text-4xl" id="">$<span id="w-change">00</span></h2>
+            </div>
+            <div class="rounded bg-teal-300 px-5 py-3">
+                <h1 class="text-3xl">balence</h1>
+                <h2 class="text-4xl">$ <span id="total-balence">1200</span></h2>
+            </div>
+
+        </section>
+
+        <!-- money enter section -->
+        <section class="grid grid-cols-2 gap-4 w-9/12 mx-auto capitalize mt-8 text-white">
+            <!-- deposit option  -->
+            <div class="bg-violet-400 px-4 rounded py-3">
+                <h1 class="text-2xl text-center font-semibold">Please deposite!</h1>
+                <div class="flex flex-col items-center justify-center my-4">
+                    <div class="flex flex-col gap-2 ">
+                        <input type="text" class="mx-auto outline-none py-1 px-2 rounded custom-depo-Box-c"
+                            placeholder="Enter amount $" id="depo-amound">
+                        <button id="btn-deposite"
+                            class="bg-red-500 px-3 py-1 w-28 rounded hover:bg-red-600">Deposite</button>
+                    </div>
+                </div>
+            </div>
+            <!-- withdrow option  -->
+            <div class="bg-rose-400	px-4 rounded py-3">
+                <h1 class="text-2xl text-center font-semibold">Please withdrow!</h1>
+                <div class="flex flex-col items-center justify-center my-4">
+                    <div class="flex flex-col gap-2 ">
+                        <input type="text" class="mx-auto outline-none py-1 px-2 rounded custom-depo-Box-c"
+                            placeholder="Enter amount $" id="withdrow-amound">
+                        <button class="bg-red-500 px-3 py-1 w-28 rounded hover:bg-red-600"
+                            id="btn-withdrow">withdrow</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
