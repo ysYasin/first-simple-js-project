@@ -24,6 +24,9 @@
 }
 
 @media only screen and (max-width:688px) {
+    .custome-bg-image {
+        height: auto;
+    }
 
     #logiImg {
         width: 35%;
@@ -36,6 +39,10 @@
 
     #moblibleViw {
         margin: auto;
+    }
+
+    .mt-28 {
+        margin-top: 0 !important;
     }
 
     .grid-cols-3,
